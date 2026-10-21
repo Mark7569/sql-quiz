@@ -33,4 +33,6 @@ jobs:
           DB_HOST: aws-1-us-west-2.pooler.supabase.com
           DB_PORT: "5432"
           DB_SSLMODE: require
-        run: python query.py
+        run: |
+          python query.py
+          python verify_quiz.py
